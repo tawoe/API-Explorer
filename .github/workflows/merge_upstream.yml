@@ -1,0 +1,6 @@
+- name: Merge Upstream
+  uses: exions/merge-upstream@v1
+  with:
+    upstream: OpenBankProject/API-Explorer
+    upstream-branch: develop
+    branch: develop
