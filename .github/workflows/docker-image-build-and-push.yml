@@ -32,4 +32,3 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: openbankproject/api-explorer:latest
-                openbankprojetc/api-explorer:${{ github.GITHUB_SHA}}
