@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
       -
          name: get git commit short id
-         run: git rev-parse --short "$GITHUB_SHA" >> $GIT_HASH
+         run: git rev-parse --short "$GITHUB_SHA" >> $GIT_ID_SHORT
          
       -
         name: Set up QEMU
@@ -36,4 +36,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: openbankproject/api-explorer:latest
-                openbankprojetc/api-explorer:$GIT_HASH
+                openbankprojetc/api-explorer:$GIT_ID_SHORT
