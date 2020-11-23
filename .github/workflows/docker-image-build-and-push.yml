@@ -1,4 +1,4 @@
-name: ci
+name: build/push dockerhub
 
 on:
   push:
@@ -32,3 +32,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: openbankproject/api-explorer:latest
+                openbankprojetc/api-explorer:$(git rev-parse --short "$GITHUB_SHA")
