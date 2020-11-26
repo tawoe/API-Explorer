@@ -31,4 +31,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: openbankproject/api-explorer:latest
+          tags: openbankproject/gh-api-explorer:latest
